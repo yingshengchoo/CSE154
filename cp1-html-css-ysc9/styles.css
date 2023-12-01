@@ -1,0 +1,44 @@
+/*
+  Vincent Choo
+  1/7/2022
+  SECTION AB, Dylan McKone, Tara Wueger
+
+  This is the CSS styles for my about me and manga/manhwa/comic page.
+*/
+
+/*
+  Note: This body rule set is to get you started
+*/
+
+body {
+  background-color: #6492f7;
+  font-family: "Helvetica", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 24 pt;
+}
+
+h2, h3 {
+  text-decoration: underline;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+#quote {
+  font-size: 28pt;
+  font-style: italic;
+  font-family: 'Luxurious Roman', cursive;
+  text-align: center;
+}
+
+a:visited {
+  color: white;
+}

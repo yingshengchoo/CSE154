@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--
+  Vincent Choo
+  Date: 02.10.2022
+  Section: CSE 154 AB
+
+  This is the index.htlm for cp3. It simulates a dating website including
+  how the dating game works, player information input section, the matching game,
+  and the results of the game.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dating Site Simulator!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Finder</h1>
+      <h2>The #1 Dating Simulator!</h2>
+    </header>
+    <main>
+      <section id="menu-view">
+        <section>
+          <header>
+            <h2>Rules</h2>
+          </header>
+          <p>
+            You have 3 minutes to press <span>'YES'</span> for people that you are interested
+            in and <span>'NO'</span> for people who do not interest you. At the end of the game,
+            you will be returned a list of matches. Note: Many very young yet mature-looking
+            users.
+          </p>
+          <p>Good luck!</p>
+          <button id="button1">Begin</button>
+        </section>
+      </section>
+      <section id="user-info" class="hidden">
+        <h2>Please Enter Some Personal Information</h2>
+        <form action="/action_page.php">
+          <p>Please enter your personal information</p>
+          <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" placeholder="Enter Full Name" required>
+          </div>
+          <div>
+            <label for="address">State of Residence: </label>
+            <input id="address" type="text" placeholder="State" required>
+          </div>
+          <div>
+            <label for="date">Birthday: </label>
+            <input id="date" type="date" required>
+          </div>
+          <div>
+            <button id='button2' type="button">Continue</button>
+          </div>
+        </form>
+      </section>
+      <section id="game-view" class="hidden">
+        <div id="timer">
+          <p><strong>Time: </strong><span id="time">03:00</span></p>
+        </div>
+        <div id="match">
+          <button id='button3'>no</button>
+          <div id="profile"></div>
+          <button id='button4'>yes</button>
+        </div>
+      </section>
+      <section id="results-view" class="hidden">
+        <h2>Results</h2>
+        <p>Matches Count: <span id="count"></span></p>
+        <button id="button5">Play Again</button>
+      </section>
+    </main>
+  </body>
+</html>
